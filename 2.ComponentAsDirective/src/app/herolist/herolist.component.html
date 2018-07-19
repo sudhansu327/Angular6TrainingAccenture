@@ -1,0 +1,34 @@
+<div class="container">
+<div class="card card-primary">
+  <div class="card-header bg-primary text-white">{{pageTitle}}</div>
+
+  <div class="card-body">
+      <div class="row">
+          <div class="col-md-2">Filter By:</div>
+          <div class="col-md-4">
+            <input type="text" name='txtFilter'  [(ngModel)]='listFilter' />    
+          </div>
+      </div>     
+      <div class="table-responsive">
+              <table class="table" *ngIf="heroes && heroes.length">
+                  <thead>
+                      <tr>                        
+                          <th>Id</th>
+                          <th>Hero Name</th>                         
+                          <th>Sports</th>
+                          <th>Nature</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr *ngFor="let hero of heroes">                    
+                      <td>{{hero.heroId}}</td>
+                      <td>{{hero.heroName|uppercase}}</td>                     
+                      <td>{{hero.sports}}</td>
+                      <td>{{hero.heroNature}}</td>
+                  </tr>
+                  </tbody>
+              </table>
+      </div>
+  </div>
+</div>
+</div>
