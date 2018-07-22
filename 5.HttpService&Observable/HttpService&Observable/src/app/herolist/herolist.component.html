@@ -1,0 +1,61 @@
+<div class="container">
+<div class="card card-primary">
+  <div class="card-header bg-primary text-white">{{pageTitle}}</div>
+
+  <div class="card-body">
+      <div class="row">
+          <div class="col-md-2">Filter By:</div>
+          <div class="col-md-6">
+            <input type="text" [(ngModel)]='filterByName'(ngModelChange)='onTextBoxChange()'/>  
+            Filter By Typed: {{filterByName}}  
+          </div>
+      </div>      
+      <div class="row">
+        <div class="col-md-2">CheckBox:</div>
+        <div class="col-md-4">
+          <input type="checkbox" [(ngModel)]='checkValue' (change)='onCheckBoxChange()'/>   
+          Checked Value - {{checkValue}} 
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">Radio Botton:</div>
+        <div class="col-md-4">
+          Male<input type="radio" name="radio" (click)="onRadioChange()" [(ngModel)]='selectedRadio' value="Male"/>
+          Female<input type="radio" name="radio" (click)="onRadioChange()" [(ngModel)]='selectedRadio' value="Female"/>   
+          Selected Value- {{selectedRadio}} 
+        </div>
+    </div>    
+      <div class="table-responsive">
+              <table class="table" *ngIf="heroes && heroes.length">
+                  <thead>
+                      <tr>
+                          <th>
+                            <button (click)="toggleImage()" class="btn btn-primary">{{showImage?'Hide':'Show'}} Image</button>
+                          </th>
+                          <th>Id</th>
+                          <th>Hero Name</th>                         
+                          <th>Sports</th>
+                          <th>Nature</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <!-- <tr *ngFor="#hero of heroes | heroFilter : listFilter"> -->
+                     <tr *ngFor="let hero of heroes">
+                      <td>
+                          <img *ngIf='showImage' [src]='hero.imageUrl'
+                          [title]='hero.heroName'
+                          [style.width.px]='imageWidth'
+                          [style.margin.px]='imageMargin'>
+                      </td>
+                      <td>{{hero.heroId}}</td>
+                      <td>{{hero.heroName|uppercase}}</td>                     
+                      <td>{{hero.sports}}</td>
+                      <td>{{hero.heroNature}}</td>
+                  </tr>
+                  </tbody>
+              </table>
+      </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,11 @@
+D:\Angular5\Test\HeroService\HeroService\bin\Debug\netcoreapp2.0\HeroService.deps.json
+D:\Angular5\Test\HeroService\HeroService\bin\Debug\netcoreapp2.0\HeroService.runtimeconfig.json
+D:\Angular5\Test\HeroService\HeroService\bin\Debug\netcoreapp2.0\HeroService.runtimeconfig.dev.json
+D:\Angular5\Test\HeroService\HeroService\bin\Debug\netcoreapp2.0\HeroService.dll
+D:\Angular5\Test\HeroService\HeroService\obj\Debug\netcoreapp2.0\HeroService.csprojResolveAssemblyReference.cache
+D:\Angular5\Test\HeroService\HeroService\obj\Debug\netcoreapp2.0\HeroService.csproj.CoreCompileInputs.cache
+D:\Angular5\Test\HeroService\HeroService\obj\Debug\netcoreapp2.0\HeroService.AssemblyInfoInputs.cache
+D:\Angular5\Test\HeroService\HeroService\obj\Debug\netcoreapp2.0\HeroService.AssemblyInfo.cs
+D:\Angular5\Test\HeroService\HeroService\bin\Debug\netcoreapp2.0\HeroService.pdb
+D:\Angular5\Test\HeroService\HeroService\obj\Debug\netcoreapp2.0\HeroService.dll
+D:\Angular5\Test\HeroService\HeroService\obj\Debug\netcoreapp2.0\HeroService.pdb
